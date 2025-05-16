@@ -10,6 +10,12 @@ RUN apt-get update -y
 # Install dependencies
 WORKDIR ./
 COPY . .
+RUN pip install pytest pytest-cov
+
+# Copy the entire git repository including .git directory
+COPY . .
+# Explicitly copy the .git directory
+COPY .git ./.git
 RUN curl -sSL https://install.python-poetry.org | python -
 ENV PATH="${PATH}:/root/.local/bin"
 RUN poetry config virtualenvs.in-project true
