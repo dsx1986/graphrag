@@ -90,6 +90,12 @@ tqdm = "^4.67.1"
 
 textblob = "^0.18.0.post0"
 spacy = "^3.8.4"
+pytest-mock = "^3.12.0"
+qdrant-client = "^1.14.1"
+weaviate-client = "^3.28.1"
+psycopg2-binary = "^2.9.7"
+google-cloud-storage = "^3.1.0"
+boto3 = "^1.38.21"
 
 [tool.poetry.group.dev.dependencies]
 coverage = "^7.6.9"
@@ -110,6 +116,12 @@ mkdocs-jupyter = "^0.25.1"
 mkdocs-exclude-search = "^0.6.6"
 pytest-dotenv = "^0.5.2"
 mkdocs-typer = "^0.0.3"
+pytest-mock = "^3.12.0"
+qdrant-client = "^1.14.1"
+weaviate-client = "^3.28.1"
+psycopg2-binary = "^2.9.7"
+google-cloud-storage = "^3.1.0"
+boto3 = "^1.38.21"
 
 [build-system]
 requires = ["poetry-core>=1.0.0", "poetry-dynamic-versioning>=1.0.0,<2.0.0"]
